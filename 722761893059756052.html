@@ -1,0 +1,688 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>#sohbet @ lekodiasama stats by egecelikci</title>
+<style type="text/css" title="default">
+a {
+	text-decoration: none;
+}
+a:link {
+	color: #0b407a;
+}
+a:visited {
+	color: #0b407a;
+}
+a:hover {
+	text-decoration: underline;
+	color: #0b407a;
+}
+a.background {
+	text-decoration: none;
+}
+a.background:link {
+	color: #0b407a;
+}
+a.background:visited {
+	color: #0b407a;
+}
+a.background:hover {
+	text-decoration: underline;
+	color: #0b407a;
+}
+
+body {
+	background-color: #dedeee;
+	font-family: Verdana, Arial, sans-serif;
+	font-size: 13px;
+	color: black;
+}
+
+#green-h {
+	height: 15px;
+	background-repeat: repeat-x;
+	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAA8AgMAAADanzhpAAAADFBMVEXMzDPMMzNmzDMzZv+sVPgxAAAAFElEQVQI12NoYMAHHfBC/OAAPggA1jQWgUt+qs4AAAAASUVORK5CYII=) 0px 0px; }
+#red-h {
+	height: 15px;
+	background-repeat: repeat-x;
+	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAA8AgMAAADanzhpAAAADFBMVEXMzDPMMzNmzDMzZv+sVPgxAAAAFElEQVQI12NoYMAHHfBC/OAAPggA1jQWgUt+qs4AAAAASUVORK5CYII=) 0px -15px; }
+#yellow-h {
+	height: 15px;
+	background-repeat: repeat-x;
+	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAA8AgMAAADanzhpAAAADFBMVEXMzDPMMzNmzDMzZv+sVPgxAAAAFElEQVQI12NoYMAHHfBC/OAAPggA1jQWgUt+qs4AAAAASUVORK5CYII=) 0px -30px; }
+#blue-h {
+	height: 15px;
+	background-repeat: repeat-x;
+	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAA8AgMAAADanzhpAAAADFBMVEXMzDPMMzNmzDMzZv+sVPgxAAAAFElEQVQI12NoYMAHHfBC/OAAPggA1jQWgUt+qs4AAAAASUVORK5CYII=) 0px -45px; }
+
+#green-v {
+	width: 15px;
+	background-repeat: repeat-y;
+	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAABAgMAAAD/diWSAAAADFBMVEXMzDPMMzNmzDMzZv+sVPgxAAAAGUlEQVQI12NYtWrVytDQ0AAGBgb7////AwA3TAczYjzlogAAAABJRU5ErkJggg==) 0px 0px; }
+#red-v {
+	width: 15px;
+	background-repeat: repeat-y;
+	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAABAgMAAAD/diWSAAAADFBMVEXMzDPMMzNmzDMzZv+sVPgxAAAAGUlEQVQI12NYtWrVytDQ0AAGBgb7////AwA3TAczYjzlogAAAABJRU5ErkJggg==) -15px 0px; }
+#yellow-v {
+	width: 15px;
+	background-repeat: repeat-y;
+	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAABAgMAAAD/diWSAAAADFBMVEXMzDPMMzNmzDMzZv+sVPgxAAAAGUlEQVQI12NYtWrVytDQ0AAGBgb7////AwA3TAczYjzlogAAAABJRU5ErkJggg==) -30px 0px; }
+#blue-v {
+	width: 15px;
+	background-repeat: repeat-y;
+	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAABAgMAAAD/diWSAAAADFBMVEXMzDPMMzNmzDMzZv+sVPgxAAAAGUlEQVQI12NYtWrVytDQ0AAGBgb7////AwA3TAczYjzlogAAAABJRU5ErkJggg==) -45px 0px; }
+
+
+td {
+	border-radius: 5px;
+	font-family: Verdana, Arial, sans-serif;
+	font-size: 13px;
+	color: black;
+	text-align: left;
+}
+.male, .male a {
+	color: #0000DD;
+}
+.female, .female a {
+	color: #DD3366;
+}
+.bot, .bot a {
+	color: #00FFFF;
+}
+.title {
+	font-family: Tahoma, Arial, sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+}
+.headtext {
+	border-radius: 8px;
+	color: white;
+	font-weight: bold;
+	text-align: center;
+	background-color: #666699;
+}
+.headlinebg {
+	border-radius: 8px;
+	background-color: #000000;
+}
+.tdtop {
+	background-color: #C8C8DD;
+}
+.hicell {
+	background-color: #BABADD;
+}
+.hicell10 {
+	background-color: #BABADD;
+	font-size: 10px;
+}
+.rankc {
+	background-color: #CCCCCC;
+}
+.hirankc {
+	background-color: #AAAAAA;
+	font-weight: bold;
+}
+.rankc10 {
+	background-color: #CCCCCC;
+	font-size: 10px;
+}
+.rankc10center {
+	background-color: #CCCCCC;
+	font-size: 10px;
+	text-align: center;
+}
+.hirankc10center {
+	background-color: #AAAAAA;
+	font-weight: bold;
+	font-size: 10px;
+	text-align: center;
+}
+.small {
+	font-family: Verdana, Arial, sans-serif;
+	font-size: 10px;
+}
+.asmall {
+	font-family: "Arial narrow", Arial, sans-serif;
+	font-size: 10px;
+	color: black;
+	text-align: center;
+}
+#footer {
+	width: 400px;
+	height: 32px;
+	background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYxIDY0LjE0MDk0OSwgMjAxMC8xMi8wNy0xMDo1NzowMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNS4xIFdpbmRvd3MiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6NUQ4RDBBQTM0NUJGMTFFMUI3NDhCM0QxMjJGN0E4ODYiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6NUQ4RDBBQTQ0NUJGMTFFMUI3NDhCM0QxMjJGN0E4ODYiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo1RDhEMEFBMTQ1QkYxMUUxQjc0OEIzRDEyMkY3QTg4NiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo1RDhEMEFBMjQ1QkYxMUUxQjc0OEIzRDEyMkY3QTg4NiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Pjybjz0AAAD5UExURf///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////+vUK5QAAABSdFJOUwADBgkMDxIVGBseISQnKi0wMzY5PD9CRUhLTldaXWNmaWxvcnV4e36BhIeKjZCTlpmcn6KlqKuusbS3ur3Aw8bJzM/S1djb3uHk5+rt8PP2+fysKi1CAAACG0lEQVQ4y21T3XqaUBBcU41ttEFQqklqBCGK1BoSS/yJaA4nIigizPs/TC9ERb/M5c7Onj27s0QniIbNPI/ZhkhfIG8E4Fa31epaHIGRv+SVcK1JLYu5LrNakr4OlXP5NOrIMxzx/qsTTTJFStyVRjiDLXH+48AXuCN5uIBXmfO0Rm7s1bYX9GaGUOTjfYK+rV3qnZIwx1KMFCKiYqS8HYglA4DZuvjx3ABsNcgTkbmqHZXKHMC/+7cmPkQA9VWH6CpUnbPyTNz1TfAbAO9qkKNGUs383wCqLv52EecBJOWkRuZCO4mtO3yKtqWXNh75AH4vDJoObMACEGvXAt0ifrEmj0KxdusAGA7G5LUZIOyG7PEhRJt8MOBhDvSeASzaLq2b/rArN/tOOQa6Qh+qq5kA3lUAy6ZPm6Yf1UnQ7zUHuOc3fn3IAMCX0wSvzV4r7R4b6wIiGYPidN9wXE6fmA5sL9mqQHK9NoeZeZTSJs2FAuBlB+htOT7xgQiguejRXVJJQ7OrZaZA/086qG+hmlopuc0sNZ4cRk3mSk6Dg97F1hurDhF9P67bF875NyXIExE9HQ3zk5+bbm8Yyk0OllPMDL+V+DiXmvbTqXoAwGpZvcMLR9svmTgCgHJ0tL3o8lL2cLa6PAcO/Ex+iqZn15dTw0CT1FfmuuxVlbR1qOYujrNgBGBWp9XqWAyBUfjqwKu9EfN9NupVM8H/S2rN5VNeTiwAAAAASUVORK5CYII=') no-repeat 0 50%;
+}
+</style>
+</head>
+<body>
+<div align="center">
+
+<h1 class="title" id="pagetitle1">#sohbet @ lekodiasama stats by egecelikci</h1>
+<p class="subtitle"><span id="pagetitle2">Statistics generated on  Tuesday 19 January 2021 - 6:54:54</span><br />
+<span id="pagetitle3">During this 217-day reporting period, a total of <b>4770</b> different nicks were represented on #sohbet.</span></p>
+   <br />
+   <table width="710" cellpadding="1" cellspacing="0" border="0">
+    <tr>
+     <td class="headlinebg">
+      <table width="100%" cellpadding="2" cellspacing="0" border="0">
+       <tr>
+        <td class="headtext">Most active times</td>
+       </tr>
+      </table>
+     </td>
+    </tr>
+   </table>
+
+<table border="0"><tr>
+<td align="center" valign="bottom" class="asmall">3.0%<br /><img id="blue-v" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" width="15" height="40" alt="46292" title="46292"/></td>
+<td align="center" valign="bottom" class="asmall">1.7%<br /><img id="blue-v" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" width="15" height="22" alt="25432" title="25432"/></td>
+<td align="center" valign="bottom" class="asmall">0.7%<br /><img id="blue-v" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" width="15" height="10" alt="11434" title="11434"/></td>
+<td align="center" valign="bottom" class="asmall">0.3%<br /><img id="blue-v" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" width="15" height="3" alt="4149" title="4149"/></td>
+<td align="center" valign="bottom" class="asmall">0.1%<br /><img id="blue-v" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" width="15" height="1" alt="2252" title="2252"/></td>
+<td align="center" valign="bottom" class="asmall">0.5%<br /><img id="blue-v" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" width="15" height="6" alt="7574" title="7574"/></td>
+<td align="center" valign="bottom" class="asmall">1.5%<br /><img id="green-v" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" width="15" height="20" alt="23112" title="23112"/></td>
+<td align="center" valign="bottom" class="asmall">2.6%<br /><img id="green-v" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" width="15" height="35" alt="40599" title="40599"/></td>
+<td align="center" valign="bottom" class="asmall">3.5%<br /><img id="green-v" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" width="15" height="46" alt="52893" title="52893"/></td>
+<td align="center" valign="bottom" class="asmall">4.2%<br /><img id="green-v" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" width="15" height="57" alt="64790" title="64790"/></td>
+<td align="center" valign="bottom" class="asmall">4.7%<br /><img id="green-v" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" width="15" height="64" alt="72667" title="72667"/></td>
+<td align="center" valign="bottom" class="asmall">5.2%<br /><img id="green-v" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" width="15" height="70" alt="79817" title="79817"/></td>
+<td align="center" valign="bottom" class="asmall">5.1%<br /><img id="yellow-v" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" width="15" height="68" alt="77529" title="77529"/></td>
+<td align="center" valign="bottom" class="asmall">5.3%<br /><img id="yellow-v" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" width="15" height="71" alt="80863" title="80863"/></td>
+<td align="center" valign="bottom" class="asmall">5.5%<br /><img id="yellow-v" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" width="15" height="74" alt="84708" title="84708"/></td>
+<td align="center" valign="bottom" class="asmall">6.2%<br /><img id="yellow-v" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" width="15" height="83" alt="94263" title="94263"/></td>
+<td align="center" valign="bottom" class="asmall">5.8%<br /><img id="yellow-v" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" width="15" height="78" alt="89133" title="89133"/></td>
+<td align="center" valign="bottom" class="asmall">6.0%<br /><img id="yellow-v" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" width="15" height="80" alt="91284" title="91284"/></td>
+<td align="center" valign="bottom" class="asmall">6.4%<br /><img id="red-v" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" width="15" height="87" alt="98444" title="98444"/></td>
+<td align="center" valign="bottom" class="asmall">6.5%<br /><img id="red-v" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" width="15" height="88" alt="100207" title="100207"/></td>
+<td align="center" valign="bottom" class="asmall">7.2%<br /><img id="red-v" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" width="15" height="97" alt="109709" title="109709"/></td>
+<td align="center" valign="bottom" class="asmall">7.4%<br /><img id="red-v" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" width="15" height="100" alt="112962" title="112962"/></td>
+<td align="center" valign="bottom" class="asmall">6.1%<br /><img id="red-v" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" width="15" height="82" alt="93527" title="93527"/></td>
+<td align="center" valign="bottom" class="asmall">4.5%<br /><img id="red-v" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" width="15" height="61" alt="69004" title="69004"/></td>
+</tr><tr>
+<td class="rankc10center" align="center">0</td>
+<td class="rankc10center" align="center">1</td>
+<td class="rankc10center" align="center">2</td>
+<td class="rankc10center" align="center">3</td>
+<td class="rankc10center" align="center">4</td>
+<td class="rankc10center" align="center">5</td>
+<td class="rankc10center" align="center">6</td>
+<td class="rankc10center" align="center">7</td>
+<td class="rankc10center" align="center">8</td>
+<td class="rankc10center" align="center">9</td>
+<td class="rankc10center" align="center">10</td>
+<td class="rankc10center" align="center">11</td>
+<td class="rankc10center" align="center">12</td>
+<td class="rankc10center" align="center">13</td>
+<td class="rankc10center" align="center">14</td>
+<td class="rankc10center" align="center">15</td>
+<td class="rankc10center" align="center">16</td>
+<td class="rankc10center" align="center">17</td>
+<td class="rankc10center" align="center">18</td>
+<td class="rankc10center" align="center">19</td>
+<td class="rankc10center" align="center">20</td>
+<td class="hirankc10center" align="center">21</td>
+<td class="rankc10center" align="center">22</td>
+<td class="rankc10center" align="center">23</td>
+</tr></table>
+<table align="center" border="0" width="520"><tr>
+<td align="center" class="asmall"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="blue-h" width="40" height="15" align="middle" alt="0-5" /> = 0-5</td>
+<td align="center" class="asmall"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="green-h" width="40" height="15" align="middle" alt="6-11" /> = 6-11</td>
+<td align="center" class="asmall"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="yellow-h" width="40" height="15" align="middle" alt="12-17" /> = 12-17</td>
+<td align="center" class="asmall"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="red-h" width="40" height="15" align="middle" alt="18-23" /> = 18-23</td>
+</tr></table>
+   <br />
+   <table width="710" cellpadding="1" cellspacing="0" border="0">
+    <tr>
+     <td class="headlinebg">
+      <table width="100%" cellpadding="2" cellspacing="0" border="0">
+       <tr>
+        <td class="headtext">Most active nicks</td>
+       </tr>
+      </table>
+     </td>
+    </tr>
+   </table>
+
+<table border="0" width="714"><tr><td>&nbsp;</td><td class="tdtop"><b>Nick</b></td><td class="tdtop"><b>Number of lines</b></td><td class="tdtop"><b>When?</b></td><td class="tdtop"><b>Last seen</b></td><td class="tdtop"><b>Random quote</b></td>
+
+</tr>
+<tr><td class="hirankc" align="left">1</td>
+<td style="background-color: #babadc"><span>Shimon#4983</span></td><td style="background-color: #babadc">107012</td><td style="background-color: #babadc"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="blue-h" border="0" width="2" height="15" alt="7170" title="7170" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="green-h" border="0" width="7" height="15" alt="18916" title="18916" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="yellow-h" border="0" width="14" height="15" alt="39065" title="39065" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="red-h" border="0" width="15" height="15" alt="41861" title="41861" /></td><td style="background-color: #babadc">today</td><td style="background-color: #babadc">"abi meme yok bunda popo filan?"</td>
+</tr>
+<tr><td class="rankc" align="left">2</td>
+<td style="background-color: #bbbbdb"><span>Lekodias#3008</span></td><td style="background-color: #bbbbdb">81068</td><td style="background-color: #bbbbdb"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="blue-h" border="0" width="1" height="15" alt="2689" title="2689" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="green-h" border="0" width="9" height="15" alt="18272" title="18272" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="yellow-h" border="0" width="15" height="15" alt="31679" title="31679" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="red-h" border="0" width="14" height="15" alt="28428" title="28428" /></td><td style="background-color: #bbbbdb">yesterday</td><td style="background-color: #bbbbdb">"Çok mutlu çıkmı&Aring;�ım la"</td>
+</tr>
+<tr><td class="rankc" align="left">3</td>
+<td style="background-color: #bcbcda"><span>Minshii#3904</span></td><td style="background-color: #bcbcda">49865</td><td style="background-color: #bcbcda"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="green-h" border="0" width="9" height="15" alt="11591" title="11591" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="yellow-h" border="0" width="15" height="15" alt="18910" title="18910" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="red-h" border="0" width="14" height="15" alt="18273" title="18273" /></td><td style="background-color: #bcbcda">yesterday</td><td style="background-color: #bcbcda">"aynı anda bir sürü adama yazıyorum"</td>
+</tr>
+<tr><td class="rankc" align="left">4</td>
+<td style="background-color: #bcbcda"><span>kairi#0077</span></td><td style="background-color: #bcbcda">43931</td><td style="background-color: #bcbcda"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="blue-h" border="0" width="3" height="15" alt="3358" title="3358" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="green-h" border="0" width="10" height="15" alt="11121" title="11121" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="yellow-h" border="0" width="11" height="15" alt="12912" title="12912" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="red-h" border="0" width="15" height="15" alt="16540" title="16540" /></td><td style="background-color: #bcbcda">today</td><td style="background-color: #bcbcda">"çalı&Aring;�ıyom diyip cs oynuyo"</td>
+</tr>
+<tr><td class="rankc" align="left">5</td>
+<td style="background-color: #bdbdd9"><span>`dαddчzчrσnє#2380</span></td><td style="background-color: #bdbdd9">39209</td><td style="background-color: #bdbdd9"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="green-h" border="0" width="9" height="15" alt="9786" title="9786" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="yellow-h" border="0" width="12" height="15" alt="12211" title="12211" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="red-h" border="0" width="17" height="15" alt="16832" title="16832" /></td><td style="background-color: #bdbdd9">36 days ago</td><td style="background-color: #bdbdd9">"Ben burdaydım zaten sen hg"</td>
+</tr>
+<tr><td class="rankc" align="left">6</td>
+<td style="background-color: #bebed8"><span>relian#0088</span></td><td style="background-color: #bebed8">36040</td><td style="background-color: #bebed8"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="blue-h" border="0" width="1" height="15" alt="1136" title="1136" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="green-h" border="0" width="6" height="15" alt="5981" title="5981" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="yellow-h" border="0" width="14" height="15" alt="13389" title="13389" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="red-h" border="0" width="17" height="15" alt="15534" title="15534" /></td><td style="background-color: #bebed8">today</td><td style="background-color: #bebed8">"ve ilk çalı&Aring;�maları sanırım"</td>
+</tr>
+<tr><td class="rankc" align="left">7</td>
+<td style="background-color: #bfbfd8"><span>Untelgalaxin#0016</span></td><td style="background-color: #bfbfd8">33563</td><td style="background-color: #bfbfd8"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="blue-h" border="0" width="1" height="15" alt="1104" title="1104" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="green-h" border="0" width="12" height="15" alt="10675" title="10675" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="yellow-h" border="0" width="12" height="15" alt="10378" title="10378" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="red-h" border="0" width="13" height="15" alt="11406" title="11406" /></td><td style="background-color: #bfbfd8">yesterday</td><td style="background-color: #bfbfd8">"kanka oyunda 5k fs olmayan carlara bakmiyo kizlae ya"</td>
+</tr>
+<tr><td class="rankc" align="left">8</td>
+<td style="background-color: #bfbfd7"><span>Edward.#7839</span></td><td style="background-color: #bfbfd7">29762</td><td style="background-color: #bfbfd7"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="blue-h" border="0" width="1" height="15" alt="971" title="971" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="green-h" border="0" width="5" height="15" alt="4189" title="4189" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="yellow-h" border="0" width="15" height="15" alt="11246" title="11246" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="red-h" border="0" width="17" height="15" alt="13356" title="13356" /></td><td style="background-color: #bfbfd7">23 days ago</td><td style="background-color: #bfbfd7">"@damn hırkızlık etmi&Aring;�ler senin eski ppye ab"</td>
+</tr>
+<tr><td class="rankc" align="left">9</td>
+<td style="background-color: #c0c0d6"><span>chain#9604</span></td><td style="background-color: #c0c0d6">27741</td><td style="background-color: #c0c0d6"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="blue-h" border="0" width="3" height="15" alt="2423" title="2423" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="green-h" border="0" width="6" height="15" alt="4430" title="4430" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="yellow-h" border="0" width="9" height="15" alt="6889" title="6889" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="red-h" border="0" width="20" height="15" alt="13999" title="13999" /></td><td style="background-color: #c0c0d6">yesterday</td><td style="background-color: #c0c0d6">"niye çekili&Aring;� yapcan ki zaten olm"</td>
+</tr>
+<tr><td class="rankc" align="left">10</td>
+<td style="background-color: #c1c1d6"><span>suffer#0001</span></td><td style="background-color: #c1c1d6">27073</td><td style="background-color: #c1c1d6"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="blue-h" border="0" width="7" height="15" alt="4957" title="4957" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="green-h" border="0" width="4" height="15" alt="2847" title="2847" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="yellow-h" border="0" width="10" height="15" alt="7337" title="7337" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="red-h" border="0" width="17" height="15" alt="11932" title="11932" /></td><td style="background-color: #c1c1d6">19 days ago</td><td style="background-color: #c1c1d6">"boost simgenin degismesi icin"</td>
+</tr>
+<tr><td class="rankc" align="left">11</td>
+<td style="background-color: #c1c1d5"><span>Kaishakunin#5680</span></td><td style="background-color: #c1c1d5">23739</td><td style="background-color: #c1c1d5"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="green-h" border="0" width="12" height="15" alt="7572" title="7572" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="yellow-h" border="0" width="13" height="15" alt="8298" title="8298" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="red-h" border="0" width="12" height="15" alt="7551" title="7551" /></td><td style="background-color: #c1c1d5">yesterday</td><td style="background-color: #c1c1d5">"tamam onu nerden yapcam onu bilmiyom"</td>
+</tr>
+<tr><td class="rankc" align="left">12</td>
+<td style="background-color: #c2c2d4"><span>Jeager#1075</span></td><td style="background-color: #c2c2d4">23433</td><td style="background-color: #c2c2d4"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="blue-h" border="0" width="2" height="15" alt="1419" title="1419" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="green-h" border="0" width="7" height="15" alt="4208" title="4208" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="yellow-h" border="0" width="13" height="15" alt="8107" title="8107" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="red-h" border="0" width="16" height="15" alt="9699" title="9699" /></td><td style="background-color: #c2c2d4">yesterday</td><td style="background-color: #c2c2d4">"&Aring;�aka yaptım özür dilerim"</td>
+</tr>
+<tr><td class="rankc" align="left">13</td>
+<td style="background-color: #c3c3d4"><span>Elypson#7988</span></td><td style="background-color: #c3c3d4">22808</td><td style="background-color: #c3c3d4"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="blue-h" border="0" width="6" height="15" alt="3613" title="3613" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="green-h" border="0" width="4" height="15" alt="2724" title="2724" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="yellow-h" border="0" width="14" height="15" alt="8076" title="8076" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="red-h" border="0" width="14" height="15" alt="8395" title="8395" /></td><td style="background-color: #c3c3d4">today</td><td style="background-color: #c3c3d4">"ve ciddi anlamda kilolu olup olmadığına"</td>
+</tr>
+<tr><td class="rankc" align="left">14</td>
+<td style="background-color: #c4c4d3"><span>Flynesss#0011</span></td><td style="background-color: #c4c4d3">22481</td><td style="background-color: #c4c4d3"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="blue-h" border="0" width="3" height="15" alt="1734" title="1734" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="green-h" border="0" width="8" height="15" alt="4856" title="4856" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="yellow-h" border="0" width="14" height="15" alt="8089" title="8089" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="red-h" border="0" width="13" height="15" alt="7802" title="7802" /></td><td style="background-color: #c4c4d3">yesterday</td><td style="background-color: #c4c4d3">"csden çıktım &Aring;�imdi oturuyom"</td>
+</tr>
+<tr><td class="rankc" align="left">15</td>
+<td style="background-color: #c4c4d2"><span>damn#0787</span></td><td style="background-color: #c4c4d2">19950</td><td style="background-color: #c4c4d2"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="green-h" border="0" width="10" height="15" alt="5327" title="5327" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="yellow-h" border="0" width="15" height="15" alt="7616" title="7616" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="red-h" border="0" width="13" height="15" alt="6850" title="6850" /></td><td style="background-color: #c4c4d2">19 days ago</td><td style="background-color: #c4c4d2">"Herkes izliyor diye izlemedim😎"</td>
+</tr>
+<tr><td class="rankc" align="left">16</td>
+<td style="background-color: #c5c5d2"><span>! ぼ#5416</span></td><td style="background-color: #c5c5d2">19910</td><td style="background-color: #c5c5d2"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="blue-h" border="0" width="1" height="15" alt="923" title="923" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="green-h" border="0" width="4" height="15" alt="2143" title="2143" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="yellow-h" border="0" width="17" height="15" alt="8591" title="8591" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="red-h" border="0" width="16" height="15" alt="8253" title="8253" /></td><td style="background-color: #c5c5d2">yesterday</td><td style="background-color: #c5c5d2">"bir hesapta 1 kere kullanabiliyorsun diye biliyorum"</td>
+</tr>
+<tr><td class="rankc" align="left">17</td>
+<td style="background-color: #c6c6d1"><span>uravil#2391</span></td><td style="background-color: #c6c6d1">19829</td><td style="background-color: #c6c6d1"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="green-h" border="0" width="12" height="15" alt="6013" title="6013" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="yellow-h" border="0" width="16" height="15" alt="8355" title="8355" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="red-h" border="0" width="10" height="15" alt="5163" title="5163" /></td><td style="background-color: #c6c6d1">2 days ago</td><td style="background-color: #c6c6d1">"Mangası bulunmuyor indiriyorsun demi 😔"</td>
+</tr>
+<tr><td class="rankc" align="left">18</td>
+<td style="background-color: #c6c6d0"><span>urushieii#9582</span></td><td style="background-color: #c6c6d0">19720</td><td style="background-color: #c6c6d0"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="blue-h" border="0" width="5" height="15" alt="2896" title="2896" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="green-h" border="0" width="3" height="15" alt="1668" title="1668" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="yellow-h" border="0" width="13" height="15" alt="6625" title="6625" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="red-h" border="0" width="17" height="15" alt="8531" title="8531" /></td><td style="background-color: #c6c6d0">79 days ago</td><td style="background-color: #c6c6d0">"barı&Aring;� ab niye her saat aktif"</td>
+</tr>
+<tr><td class="rankc" align="left">19</td>
+<td style="background-color: #c7c7d0"><span>man of culture#5872</span></td><td style="background-color: #c7c7d0">18285</td><td style="background-color: #c7c7d0"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="blue-h" border="0" width="3" height="15" alt="1469" title="1469" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="green-h" border="0" width="10" height="15" alt="4783" title="4783" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="yellow-h" border="0" width="14" height="15" alt="6422" title="6422" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="red-h" border="0" width="12" height="15" alt="5611" title="5611" /></td><td style="background-color: #c7c7d0">yesterday</td><td style="background-color: #c7c7d0">"direk tat sunucularına yazsak daha mantıklı olmaz mı"</td>
+</tr>
+<tr><td class="rankc" align="left">20</td>
+<td style="background-color: #c8c8cf"><span>İhsan#9582</span></td><td style="background-color: #c8c8cf">17925</td><td style="background-color: #c8c8cf"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="blue-h" border="0" width="3" height="15" alt="1478" title="1478" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="green-h" border="0" width="8" height="15" alt="4009" title="4009" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="yellow-h" border="0" width="11" height="15" alt="5107" title="5107" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="red-h" border="0" width="16" height="15" alt="7331" title="7331" /></td><td style="background-color: #c8c8cf">14 days ago</td><td style="background-color: #c8c8cf">"@gyro. 5kg leblebiye her &Aring;�ey senden olsun ?"</td>
+</tr>
+<tr><td class="rankc" align="left">21</td>
+<td style="background-color: #c9c9ce"><span>∞ Hermess0002 ekle#2752</span></td><td style="background-color: #c9c9ce">17888</td><td style="background-color: #c9c9ce"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="blue-h" border="0" width="1" height="15" alt="842" title="842" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="green-h" border="0" width="6" height="15" alt="2927" title="2927" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="yellow-h" border="0" width="14" height="15" alt="6623" title="6623" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="red-h" border="0" width="16" height="15" alt="7496" title="7496" /></td><td style="background-color: #c9c9ce">10 days ago</td><td style="background-color: #c9c9ce">"sunucuya yazmıom aga zaten"</td>
+</tr>
+<tr><td class="rankc" align="left">22</td>
+<td style="background-color: #c9c9ce"><span>natias#4323</span></td><td style="background-color: #c9c9ce">17617</td><td style="background-color: #c9c9ce"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="blue-h" border="0" width="4" height="15" alt="2142" title="2142" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="green-h" border="0" width="11" height="15" alt="4968" title="4968" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="yellow-h" border="0" width="9" height="15" alt="4228" title="4228" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="red-h" border="0" width="14" height="15" alt="6279" title="6279" /></td><td style="background-color: #c9c9ce">today</td><td style="background-color: #c9c9ce">"genel olarak karar değil de durumla alakalı diyelim"</td>
+</tr>
+<tr><td class="rankc" align="left">23</td>
+<td style="background-color: #cacacd"><span>Deleted User#0000</span></td><td style="background-color: #cacacd">17542</td><td style="background-color: #cacacd"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="blue-h" border="0" width="3" height="15" alt="1463" title="1463" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="green-h" border="0" width="8" height="15" alt="3538" title="3538" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="yellow-h" border="0" width="11" height="15" alt="5223" title="5223" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="red-h" border="0" width="16" height="15" alt="7318" title="7318" /></td><td style="background-color: #cacacd">24 days ago</td><td style="background-color: #cacacd">"Ma&Aring;�allah burası her an aktif"</td>
+</tr>
+<tr><td class="rankc" align="left">24</td>
+<td style="background-color: #cbcbcc"><span>whitechapel#6793</span></td><td style="background-color: #cbcbcc">17479</td><td style="background-color: #cbcbcc"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="green-h" border="0" width="8" height="15" alt="3576" title="3576" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="yellow-h" border="0" width="13" height="15" alt="5726" title="5726" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="red-h" border="0" width="17" height="15" alt="7857" title="7857" /></td><td style="background-color: #cbcbcc">yesterday</td><td style="background-color: #cbcbcc">"Yks ayt de uçuruyor kaliteli sorular var"</td>
+</tr>
+<tr><td class="rankc" align="left">25</td>
+<td style="background-color: #cccccc"><span>Chisaki#9999</span></td><td style="background-color: #cccccc">17045</td><td style="background-color: #cccccc"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="blue-h" border="0" width="2" height="15" alt="1166" title="1166" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="green-h" border="0" width="5" height="15" alt="2284" title="2284" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="yellow-h" border="0" width="11" height="15" alt="4906" title="4906" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="red-h" border="0" width="20" height="15" alt="8689" title="8689" /></td><td style="background-color: #cccccc">yesterday</td><td style="background-color: #cccccc">"xbox a yeniden geldi mi nitro"</td>
+</tr>
+</table><br />
+<br /><b><i>These didn't make it to the top:</i></b><table><tr>
+<td class="rankc10"><span>gyro.#2014 (16717)</span></td>
+<td class="rankc10"><span>(b)ela#3516 (16506)</span></td>
+<td class="rankc10"><span>Vestia#5407 (15993)</span></td>
+<td class="rankc10"><span>togcu adam#3333 (15711)</span></td>
+<td class="rankc10"><span>uyku#8345 (15436)</span></td>
+</tr><tr>
+<td class="rankc10"><span>Bell-kun#5315 (14108)</span></td>
+<td class="rankc10"><span>chastel#8946 (13843)</span></td>
+<td class="rankc10"><span>shu#0009 (13584)</span></td>
+<td class="rankc10"><span>'Fizh#5059 (12643)</span></td>
+<td class="rankc10"><span>ZaptomarkSS#8910 (11235)</span></td>
+</tr><tr>
+<td class="rankc10"><span>Keaton#1568 (10953)</span></td>
+<td class="rankc10"><span>SaykoChiko#7655 (10877)</span></td>
+<td class="rankc10"><span>Jdot#4216 (10477)</span></td>
+<td class="rankc10"><span>slm#5066 (10198)</span></td>
+<td class="rankc10"><span>�&bull;ιинα#5777 (9983)</span></td>
+</tr><tr>
+<td class="rankc10"><span>Lord Mu&Aring;�amba#0846 (9761)</span></td>
+<td class="rankc10"><span>hainanensis#8513 (9598)</span></td>
+<td class="rankc10"><span>Ookami#4849 (9452)</span></td>
+<td class="rankc10"><span>zhu#1009 (9067)</span></td>
+<td class="rankc10"><span>MEE6#4876 (8728)</span></td>
+</tr><tr>
+<td class="rankc10"><span>PüskeviiT#4800 (8699)</span></td>
+<td class="rankc10"><span>.Panda#6013 (8546)</span></td>
+<td class="rankc10"><span>Ba&Aring;�ka bir hesaba gecti-#3035 (8495)</span></td>
+<td class="rankc10"><span>mom i can fly#7785 (8064)</span></td>
+<td class="rankc10"><span>AdraSteiA#7153 (7774)</span></td>
+</tr><tr>
+<td class="rankc10"><span>Beaf#0003 (7664)</span></td>
+<td class="rankc10"><span>Duployt#5763 (7553)</span></td>
+<td class="rankc10"><span>Pain.#7929 (7380)</span></td>
+<td class="rankc10"><span>Suppheme#3915 (7174)</span></td>
+<td class="rankc10"><span>Kamitachi#1881 (7134)</span></td>
+</tr></table>
+<br /><b>By the way, there were 4715 other nicks.</b><br />
+   <br />
+   <table width="710" cellpadding="1" cellspacing="0" border="0">
+    <tr>
+     <td class="headlinebg">
+      <table width="100%" cellpadding="2" cellspacing="0" border="0">
+       <tr>
+        <td class="headtext">Big numbers</td>
+       </tr>
+      </table>
+     </td>
+    </tr>
+   </table>
+
+<table width="714">
+<tr><td class="hicell">Is <b>Acının İlacı?#4948</b> stupid or just asking too many questions?  19.5% lines contained a question!
+<br /><span class="small"><b>Akashi#5262</b> didn't know that much either.  13.4% of his/her lines were questions.</span>
+</td></tr>
+<tr><td class="hicell">The loudest one was <b>MEE6#4876</b>, who yelled 77.2% of the time!
+<br /><span class="small">Another <i>old yeller</i> was <b>Dark Salvatore#8314</b>, who shouted 9.6% of the time!</span>
+</td></tr>
+<tr><td class="hicell">It seems that <b>Zroean#6662</b>'s shift-key is hanging:  9.4% of the time he/she wrote UPPERCASE.<br /><span class="small"><b>For example, like this:</b><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;Zroean#6662&gt; TAYFA</span>
+<br /><span class="small"><b>Shinobu Kochou#5664</b> just forgot to deactivate his/her Caps-Lock.  He/She wrote UPPERCASE 7.0% of the time.</span>
+</td></tr>
+<tr><td class="hicell">Nobody beat anyone up.  Everybody was friendly.</td></tr>
+<tr><td class="hicell"><b>Ben Emo ∞#0350</b> brings happiness to the world.  25.7% lines contained smiling faces.  :)
+<br /><span class="small"><b>Lwreyu#2157</b> isn't a sad person either, smiling 13.1% of the time.</span>
+</td></tr>
+<tr><td class="hicell"><b>begü&Aring;�#8323</b> seems to be sad at the moment:  5.2% lines contained sad faces.  :(
+<br /><span class="small"><b>En iyisiyim#5907</b> is also a sad person, crying 5.1% of the time.</span>
+</td></tr>
+<tr><td class="hicell"><b>MEE6#4876</b> wrote the longest lines, averaging 71.7 letters per line.<br />
+<span class="small">#sohbet average was 18.1 letters per line.</span></td></tr>
+<tr><td class="hicell"><b>Skydai#8023</b> wrote the shortest lines, averaging 9.4 characters per line.<br />
+<span class="small"><b>Meri#0337</b> was tight-lipped, too, averaging 10.6 characters.</span></td></tr>
+<tr><td class="hicell"><b>Lekodias#3008</b> spoke a total of 274493 words!
+<br /><span class="small">Lekodias#3008's faithful follower, <b>Shimon#4983</b>, didn't speak so much: 253933 words.</span>
+</td></tr>
+<tr><td class="hicell"><b>Alle &aelig;��#0401</b> wrote an average of 11.88 words per line.
+<br /><span class="small">Channel average was 2.84 words per line.</span>
+</td></tr>
+</table>
+   <br />
+   <table width="710" cellpadding="1" cellspacing="0" border="0">
+    <tr>
+     <td class="headlinebg">
+      <table width="100%" cellpadding="2" cellspacing="0" border="0">
+       <tr>
+        <td class="headtext">Most used words</td>
+       </tr>
+      </table>
+     </td>
+    </tr>
+   </table>
+
+<table border="0" width="714"><tr>
+<td>&nbsp;</td><td class="tdtop"><b>Word</b></td>
+<td class="tdtop"><b>Number of Uses</b></td>
+<td class="tdtop"><b>Last Used by</b></td></tr>
+<tr><td class="hirankc">1</td>
+<td class="hicell">kadar</td>
+<td class="hicell">14939</td>
+<td class="hicell">MEE6#4876</td>
+</tr>
+<tr><td class="rankc">2</td>
+<td class="hicell">değil</td>
+<td class="hicell">12194</td>
+<td class="hicell">vazo#2476</td>
+</tr>
+<tr><td class="rankc">3</td>
+<td class="hicell">geldin</td>
+<td class="hicell">12171</td>
+<td class="hicell">Pain.#7929</td>
+</tr>
+<tr><td class="rankc">4</td>
+<td class="hicell">güzel</td>
+<td class="hicell">12159</td>
+<td class="hicell">relian#0088</td>
+</tr>
+<tr><td class="rankc">5</td>
+<td class="hicell">bende</td>
+<td class="hicell">10596</td>
+<td class="hicell">Nagata#2584</td>
+</tr>
+<tr><td class="rankc">6</td>
+<td class="hicell">benim</td>
+<td class="hicell">10423</td>
+<td class="hicell">vazo#2476</td>
+</tr>
+<tr><td class="rankc">7</td>
+<td class="hicell">selam</td>
+<td class="hicell">9644</td>
+<td class="hicell">natias#4323</td>
+</tr>
+<tr><td class="rankc">8</td>
+<td class="hicell">zaten</td>
+<td class="hicell">8806</td>
+<td class="hicell">slm#5066</td>
+</tr>
+<tr><td class="rankc">9</td>
+<td class="hicell">sonra</td>
+<td class="hicell">8544</td>
+<td class="hicell">Pain.#7929</td>
+</tr>
+<tr><td class="rankc">10</td>
+<td class="hicell">devam</td>
+<td class="hicell">8397</td>
+<td class="hicell">MEE6#4876</td>
+</tr>
+</table>
+   <br />
+   <table width="710" cellpadding="1" cellspacing="0" border="0">
+    <tr>
+     <td class="headlinebg">
+      <table width="100%" cellpadding="2" cellspacing="0" border="0">
+       <tr>
+        <td class="headtext">Most referenced URLs</td>
+       </tr>
+      </table>
+     </td>
+    </tr>
+   </table>
+
+<table border="0" width="714"><tr>
+<td>&nbsp;</td><td class="tdtop"><b>URL</b></td>
+<td class="tdtop"><b>Number of Uses</b></td>
+<td class="tdtop"><b>Last Used by</b></td></tr>
+<tr><td class="hirankc">1</td>
+<td class="hicell"><a href="https://media.discordapp.net/attachments/792855651184541696/793260514033532938/image0.gif">https://media.discordapp.net/attachments/792855651184541696/</a></td>
+<td class="hicell">28</td>
+<td class="hicell">Lekodias#3008</td>
+</tr>
+<tr><td class="rankc">2</td>
+<td class="hicell"><a href="https://tenor.com/view/cat-lick-yum-hungry-cute-gif-16063089">https://tenor.com/view/cat-lick-yum-hungry-cute-gif-16063089</a></td>
+<td class="hicell">18</td>
+<td class="hicell">Lekodias#3008</td>
+</tr>
+<tr><td class="rankc">3</td>
+<td class="hicell"><a href="https://myanimelist.net/profile/Relianz">https://myanimelist.net/profile/Relianz</a></td>
+<td class="hicell">12</td>
+<td class="hicell">relian#0088</td>
+</tr>
+<tr><td class="rankc">4</td>
+<td class="hicell"><a href="https://media.discordapp.net/attachments/472731126503309352/788899880525496340/dc882a50c003e38b3144d391f1320712.gif">https://media.discordapp.net/attachments/472731126503309352/</a></td>
+<td class="hicell">11</td>
+<td class="hicell">Lekodias#3008</td>
+</tr>
+<tr><td class="rankc">5</td>
+<td class="hicell"><a href="https://media.giphy.com/media/lnyVXGjLLiM3RkmoO1/giphy.gif">https://media.giphy.com/media/lnyVXGjLLiM3RkmoO1/giphy.gif</a></td>
+<td class="hicell">10</td>
+<td class="hicell">Lekodias#3008</td>
+</tr>
+</table>
+   <br />
+   <table width="710" cellpadding="1" cellspacing="0" border="0">
+    <tr>
+     <td class="headlinebg">
+      <table width="100%" cellpadding="2" cellspacing="0" border="0">
+       <tr>
+        <td class="headtext">Other interesting numbers</td>
+       </tr>
+      </table>
+     </td>
+    </tr>
+   </table>
+
+<table width="714">
+<tr><td class="hicell">Nice opers here, no one got kicked!</td></tr>
+<tr><td class="hicell">Strange, no op was given on #sohbet!</td></tr>
+<tr><td class="hicell">Wow, no op was taken on #sohbet!</td></tr>
+<tr><td class="hicell">No actions in #sohbet!</td></tr>
+<tr><td class="hicell"><b>Shimon#4983</b> talks to him/herself a lot.  He/She wrote over 5 lines in a row 907 times!
+<br /><span class="small">Another lonely one was <b>Lekodias#3008</b>, who managed to hit 534 times.</span>
+</td></tr>
+<tr><td class="hicell"><b>✭  BuSe#9849</b> has quite a potty mouth.  2.0% words were foul language.
+<br /><span class="small"><b>ケ R U &Aring;� E N#7178</b> also makes sailors blush, 2.0% of the time.</span>
+</td></tr>
+</table>
+   <br />
+   <table width="710" cellpadding="1" cellspacing="0" border="0">
+    <tr>
+     <td class="headlinebg">
+      <table width="100%" cellpadding="2" cellspacing="0" border="0">
+       <tr>
+        <td class="headtext">Latest Topics</td>
+       </tr>
+      </table>
+     </td>
+    </tr>
+   </table>
+
+<table width="714">
+<tr><td class="hicell">A topic was never set on this channel.</td></tr>
+</table>
+<div id="totallines">Total number of lines: 1532644.</div>
+<div id="footer" class="small">
+	<div id="stats_gen">Stats generated by <a href="https://pisg.github.io/" title="Go to the pisg homepage" class="background">pisg</a> v0.80-preview2</div>
+	<div id="stats_text">Stats generated in 00 hours 11 minutes and 42 seconds</div>
+</div>
+
+<!-- NFiles = "0"; Format = "mbot"; Lang = "EN"; LangFile = "lang.txt"; Charset = "iso-8859-1"; LogCharset = ""; LogCharsetFallback = ""; LogPrefix = ""; LogSuffix = ""; NickTracking = "0"; TimeOffset = "+0" -->
+</div>
+</body>
+</html>
+
